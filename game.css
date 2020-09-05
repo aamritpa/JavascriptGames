@@ -1,7 +1,18 @@
-.fullscreen{
+.login{
     background-color: black;
     padding-top: 250px;
 }
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: white;
+  text-align: center;
+  color: black;
+}
+
 a {
     color: skyblue;
   }
@@ -31,4 +42,46 @@ a {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     border-color: coral;
+}
+.Singleplayer{
+    float: right;
+    border-style: solid;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    height: 10em;
+    top: 50%;
+    left: 20%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-color: coral;
+
+}
+.Multiplayer{
+    float: right;
+    border-style: solid;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    height: 10em;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-color: coral;
+
+}
+.Onlineplayer{
+    float: right;
+    border-style: solid;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    height: 10em;
+    top: 50%;
+    left: 80%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-color: coral;
+
 }
