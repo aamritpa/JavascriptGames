@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>Happy Hunt</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="game.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="script.js"></script>
 </head>
 <body class="happyhunt_main">
 
@@ -18,13 +18,18 @@
     <div class="container">
         <div class="row">
           <div class="Singleplayer">
-            <a href="singleplayer_main.html"><h1>Single Player</h1></a>
+            <a href="singleplayer_main.html">
+              <button type="button" class="btn btn-success btn-primary btn-lg" >Single Player</button>
+            </a>
           </div>
           <div class="Multiplayer">
-            <a href="multiplayer_main.html"><h1>Multi Player</h1></a>
+            <a href="multiplayer_main.html">
+              <button type="button" class="btn btn-success btn-primary btn-lg" >Multi Player</button>
+            </a>
+            
           </div>
           <div class="Onlineplayer">
-            <a href="onlineplayer_main.html"><h1>Online Player</h1></a>
+            <a href="onlineplayer_main.html"><button type="button" class="btn btn-success btn-primary btn-lg">Online Player</button></a>
           </div>
         </div>
     </div>
@@ -33,3 +38,4 @@
         <p>@copyright Amritpal Singh</p>
     </div> 
 </body>
+</html>
