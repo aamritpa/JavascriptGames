@@ -75,3 +75,6 @@ a {
 .happyhunt_main{
     background-color: white;
 }
+.singleplayerlogin {
+    overflow: hidden; /* Hide scrollbars */
+  }

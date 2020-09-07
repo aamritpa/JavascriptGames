@@ -7,7 +7,7 @@ var firstposition =true;
 function pointgenerate(event)
 {
     point_array[count] = paper.circle(Math.random()*2500, Math.random()*2000, 5).attr({ 
-        fill: "#ACD", 
+        fill: '#f'+Math.floor(Math.random() * 500),
         stroke: "#000", 
         "stroke-width": 1
     });
@@ -33,32 +33,22 @@ function objectmovement(event)
     shape_attr = {
             'transform': 't' + valueX  + ',' + valueY,
             }
-        circle.animate(shape_attr,1000);  
+        circle.animate(shape_attr);  
         var coords = "X coords: " + valueX + ", Y coords: " + valueY;
         document.getElementById("demo").innerHTML = coords;
        
-        if(valueX-firstX>20 )
+        if(valueX-firstX>0)
         {
-            window.scrollBy(10, 0);
-        }
-        else if(valueX-firstX<-50)
-        {
-            window.scrollBy(-20, 0);
+            window.scrollBy(2, 0);
         }
         
-        if(valueY-firstY>20 )
+        if(valueY-firstY>0 )
         {
-            window.scrollBy(0, 10);
+            window.scrollBy(0, 2);
         }
-        else if(valueY-firstY<-50)
-        {
-            window.scrollBy(0, -10);
-        }
-        
-        
+          
 }
         
-
 setup = function() {
     paper =Raphael("container",5000,5000)
     circle = paper.circle(250, 150, 30).attr({ 
