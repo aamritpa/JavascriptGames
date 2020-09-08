@@ -35,7 +35,8 @@ function mousemovement(event)
         objectmovement(0);  // Mouse does not move
     }
 }
-function objectmovement(status){
+function objectmovement(){
+    /*
     if(status==0)
     {
         shape_attr = {
@@ -72,18 +73,34 @@ function objectmovement(status){
         window.scrollBy(0, 2);
     }
      */
+    valueY=valueY+1;
+    var anim = Raphael.animation( 
+        { 0.5: 
+        {   transform: "t500,500"}, 1: 
+        { transform: 't-500,-500' } 
+        }, 5000 ).repeat(Infinity);
+    if(valueY%2==0)
+    {
+        circle.stop();
+        
+    }
+    else{
+        circle.animate(anim);
+    }
 }
         
 setup = function() {
     paper =Raphael("container",5000,5000)
+    
     circle = paper.circle(250, 150, 30).attr({ 
         fill: "#ACD", 
         stroke: "#000", 
         "stroke-width": 2
     });
-    $(document).mousemove(mousemovement)
+    
+    //$(document).mousemove(objectmovement)
 
-    $(document).mousemove(pointgenerate)
+    //$(document).mousemove(pointgenerate)
   }
 
 $(document).ready(setup)
