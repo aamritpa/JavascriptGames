@@ -75,6 +75,26 @@ a {
 .happyhunt_main{
     background-color: white;
 }
+/*
 .singleplayerlogin {
-    overflow: hidden; /* Hide scrollbars */
+    overflow: hidden; /* Hide scrollbars 
+  }
+*/
+#test
+  {
+      border:1px solid black;
+      height:120px;
+      margin:50px auto;
+      overflow:hidden;
+      width:500px;
+  }
+#content
+  {
+      height:100px;
+      width:900px;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
   }
