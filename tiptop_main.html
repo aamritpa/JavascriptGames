@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Front Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="game_tiptop.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="script_tiptop.js"></script>
+</head>
+
+<body>
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" border-style: solid;">
+        <a class="navbar-brand"><h2>TipTop</h2></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><h5>Home</h5> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="biography.html"><h5>About</h5> <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div id='functions' class="text-center">
+        <div class="container">
+            <h4>What Shape Would You like?</h4>
+        </div>
+
+        <select class="browser-default custom-select" style="width:250px; height: 40px;" id="option">
+            <option value="a">Rectangle</option>
+            <option value="b">Circle</option>
+            <option value="c">Star</option>
+        </select>
+    
+        <button type="button" id= "draw" class="btn btn-success btn-lg " style="width:100px; height: 40px; padding-top: 5px;" >Play</button><br><br>
+
+
+        <label for="quantity" ><h4>Difficulty:</h4></label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100"></input><br><br>
+    
+        <p><h4>Score:<div id="score"></div></h4></p>
+        <p><h4>Misses:<div id="Misses"></div></h4></p>
+    </div>
+    
+    <div id="container"></div>
+</body>
+</html>
