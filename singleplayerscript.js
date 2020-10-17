@@ -8,6 +8,7 @@ var count=0;    // Count total number of points.
 var firstposition =true;
 var startpointX;
 var startpointY;
+var scrollermove = false;
 
 function pointgenerate(event)
 {
@@ -46,18 +47,19 @@ function objectmovement(event){
     shape_attr = {
         'transform': 't' + valueX  + ',' + valueY,
         }
-    circle.animate(shape_attr);
+    circle.animate(shape_attr,2);
     
 }
-/* This need to be updated. This whole function shoulg be called from 'setup'
+/* This need to be updated. This whole function shoulg be called from 'setup' */
 $(document).mousemove(function(e) {
     $("html, body").scrollTop(function(i, v) {
        var h = $(window).height();
        var y = e.clientY - h / 2;   //determins the y location where your scrolling starts
        return v + y * 0.05;          //0.1 determines the speed
+       objectmovement(e);
      });
   });
-*/
+
 
 var radius=50;   
 setup = function() {
