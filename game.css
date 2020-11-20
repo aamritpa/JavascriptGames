@@ -98,3 +98,10 @@ a {
       -o-user-select: none;
       user-select: none;
   }
+/*
+  #score-box
+  {
+    float: right;
+    padding: 20px;
+    border-style: solid;
+  }*/
